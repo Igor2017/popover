@@ -346,6 +346,8 @@ export class SatPopover implements OnInit {
     // `@internal` stripping doesn't seem to work if the property is
     // declared inside the constructor
     this._anchoringService = _anchoringService;
+    this._openTransition = this._defaultTransition;
+    this._closeTransition = this._defaultTransition;
   }
 
   ngOnInit() {

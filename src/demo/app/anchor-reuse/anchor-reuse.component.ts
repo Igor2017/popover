@@ -40,7 +40,7 @@ export class AnchorReuseComponent {
   @ViewChild('b') bPopover: SatPopover;
 
   activePopover = 'a';
-  showAnchor = true;
+  showAnchor = false;
 
   getActivePopover(): SatPopover {
     return this.activePopover === 'a' ? this.aPopover : this.bPopover;
